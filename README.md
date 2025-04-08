@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# 🎨 Artista Frontend (Landing)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend principal del proyecto **Artista**, diseñado como una landing page pública informativa para campañas, servicios y comunidad artística.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
 
-## Expanding the ESLint configuration
+## 🖼️ Contenido visual
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Este proyecto incluye una gran variedad de imágenes, íconos y fuentes personalizadas ubicadas en:
 
-- Configure the top-level `parserOptions` property like this:
+- `src/assets/img/`: imágenes del sitio
+- `src/assets/fonts/`: fuentes tipográficas
+- `src/assets/svg/`: SVGs y elementos gráficos
+- `src/components/Campañas/`: secciones reutilizables para campañas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📁 Estructura del proyecto
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- `src/main.tsx`: punto de entrada de la app
+- `src/components/`: componentes visuales como WhatsApp y secciones de campañas
+- `index.html`: plantilla principal
+- `tailwind.config.js`: configuración de Tailwind
+- `vite.config.ts`: configuración de Vite
+- `netlify.toml`: listo para desplegar en Netlify
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## ⚙️ Instalación
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/Artista-frontend.git
+   cd Artista-frontend
+   ```
+
+2. Instala dependencias:
+   ```bash
+   npm install
+   ```
+
+3. Ejecuta el proyecto localmente:
+   ```bash
+   npm run dev
+   ```
+
+4. Abre `http://localhost:5173` en tu navegador.
+
+## 🌐 Despliegue
+
+Configurado para desplegarse fácilmente en [Netlify](https://www.netlify.com/) con el archivo `netlify.toml`.
+
+## 📌 Objetivo del sitio
+
+El objetivo principal de esta landing es presentar al público el proyecto Artista, sus valores, servicios, beneficios, comunidad y contacto.
+
+## 👨‍💻 Autor
+
+Woody Jacques – [Workana Freelancer](https://www.workana.com/)
+
+---
+
+© 2025 Artista. Todos los derechos reservados.
